@@ -9,5 +9,3 @@ export const env = {
   mongoURI: process.env.MONGO_URI || "mongodb://localhost:27017/mydb",
   tokenSecret:process.env.JWT_SECRET || "thisisasecret"
 };
-
-console.log({env})
