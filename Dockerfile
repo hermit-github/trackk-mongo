@@ -23,6 +23,7 @@ RUN npm ci --omit=dev
 COPY --from=builder /app/dist ./dist
 
 ENV NODE_ENV=production
+ENV MONGO_URI=mongodb+srv://shubhamhalder0_db_user:dSasxr1L1mn1Lx6c@cluster0.lvxvlph.mongodb.net/?appName=Cluster0
 
 EXPOSE 8080
 
