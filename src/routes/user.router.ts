@@ -13,7 +13,7 @@ const router = express.Router();
 
 router
   .route("/")
-  .get(authenticate, checkRoles(USER_ROLES.ADMIN), UserController.getAllUsers)
+  .get(UserController.getAllUsers)
   .post(validate(createUserSchema), UserController.createUser);
 
 router.route("/login").post(validate(loginUserSchema), UserController.login);
